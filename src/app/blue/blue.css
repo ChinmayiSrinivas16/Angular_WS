@@ -1,0 +1,29 @@
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.book-table th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.book-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.book-image {
+  width: 60px;   /* make it small */
+  height: auto; /* keep aspect ratio */
+}
+
+.book-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+

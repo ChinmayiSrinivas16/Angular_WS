@@ -1,0 +1,13 @@
+<p>blue works!</p>
+<p>{{name}}</p>
+
+<p>{{Books.length}} books available</p>
+<ul>
+    <li *ngFor="let book of Books">
+        {{book.id}} - {{book.title}}
+    </li>
+    <button (click)="onButtonClick()">click me</button>
+    <input type="text" [(ngModel)]="name" placeholder="Enter your name">
+    <p>Your name is {{name}}</p>
+    <img [src]="imageUrl" alt="punch Image">
+</ul>

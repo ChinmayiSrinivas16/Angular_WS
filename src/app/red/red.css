@@ -1,0 +1,24 @@
+.red-box {
+  height: 100%;
+  background: linear-gradient(to bottom, #ff4b2b, #ff416c);
+  color: white;
+  padding: 20px;
+}
+
+.red-box h3 {
+  margin-bottom: 15px;
+}
+
+.red-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.red-box li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.red-box li:hover {
+  text-decoration: underline;
+}
