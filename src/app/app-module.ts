@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {  HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app';
 import { AppRoutingModule } from './app-routing-module';
@@ -12,6 +13,8 @@ import { Green } from './green/green';
 import { Orange } from './orange/orange';
 import { Catalog } from './catalog/catalog';
 import { AddBook } from './add-book/add-book';
+import { Laptop } from './laptop/laptop';
+
 
 @NgModule({
   declarations: [
@@ -21,14 +24,17 @@ import { AddBook } from './add-book/add-book';
     Blue,
     Green,
     Orange,
-    AddBook
+    AddBook,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    Catalog
-  ],
+    Catalog,
+    HttpClientModule,
+    Laptop
+],
   providers: [],
   bootstrap: [AppComponent]
 })

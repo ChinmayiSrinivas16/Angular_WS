@@ -1,0 +1,47 @@
+<h2>Laptop CRUD (Spring Boot + Angular)</h2>
+
+<!-- FORM -->
+<div>
+  <input
+    type="text"
+    placeholder="Brand"
+    [(ngModel)]="laptop.brand"
+  />
+
+  <input
+    type="number"
+    placeholder="Price"
+    [(ngModel)]="laptop.price"
+  />
+
+  <button (click)="addOrUpdate()">
+  {{ isEdit ? 'Update' : 'Add' }}
+</button>
+
+  <button *ngIf="isEdit" (click)="resetForm()">Cancel</button>
+</div>
+
+<hr>
+
+<!-- TABLE -->
+<table border="1" width="60%">
+  <tr>
+    <th>ID</th>
+    <th>Brand</th>
+    <th>Price</th>
+    <th>Actions</th>
+  </tr>
+
+  <tr *ngFor="let l of laptops">
+    <td>{{ l.id }}</td>
+    <td>{{ l.brand }}</td>
+    <td>{{ l.price }}</td>
+
+    <td>
+      <button (click)="editLaptop(l)">Edit</button>
+      <button (click)="deleteLaptop(l.id)">Delete</button>
+    </td>
+  </tr>
+</table>
+
+
