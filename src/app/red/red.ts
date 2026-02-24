@@ -19,11 +19,12 @@ import { Component } from '@angular/core';
 })
 export class Red {
 
-  // Array for ngFor
+  // Array for ngFor (Cafe Categories)
   categories: string[] = [
-    'Clothing',
-    'Footwear',
-    'Accessories'
+    'Coffee',
+    'Snacks',
+    'Desserts',
+    'Beverages'
   ];
 
   selectedCategory: string = '';

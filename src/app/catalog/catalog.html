@@ -1,0 +1,31 @@
+<!-- <p>catalog works!</p>
+<ul>
+    <li *ngFor="let book of bookList">
+        {{book.title}} by {{book.author}}
+    </li>
+</ul> -->
+
+
+<h2>Book Catalog</h2>
+
+<ul>
+  @for (book of bookList; track book.id) {
+    <li>
+      {{ book.id }} - {{ book.title }} by {{ book.author }}
+
+      <button (click)="editBook(book)">Edit</button>
+      <button (click)="deleteBook(book.id)">Delete</button>
+    </li>
+  }
+</ul>
+
+<hr>
+
+@if (selectedBook) {
+  <h3>Edit Book</h3>
+
+  <input type="text" [value]="selectedBook.title" (input)="selectedBook.title = $any($event.target).value" placeholder="Title">
+  <input type="text" [value]="selectedBook.author" (input)="selectedBook.author = $any($event.target).value" placeholder="Author">
+
+  <button (click)="updateBook()">Update</button>
+}

@@ -1,1 +1,94 @@
-<h1>Hello World</h1>
+<div class="layout">
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>☕ Chinmayi's Cafe</h1>
+  </header>
+
+  <div class="body">
+
+    <!-- LEFT SIDE - Menu Categories -->
+    <aside class="left">
+      <h3>Menu</h3>
+      <ul>
+        <li>☕ Coffee</li>
+        <li>🥐 Snacks</li>
+        <li>🍰 Desserts</li>
+        <li>🥤 Beverages</li>
+      </ul>
+    </aside>
+
+    <!-- CENTER - Items -->
+    <main class="content">
+
+      <h2>Today's Specials</h2>
+
+      <div class="products">
+
+        <div class="product-card">
+          <h3>☕ Cappuccino</h3>
+          <p>Price: ₹149</p>
+          <button>Add to Order</button>
+        </div>
+
+        <div class="product-card">
+          <h3>🥐 Croissant</h3>
+          <p>Price: ₹99</p>
+          <button>Add to Order</button>
+        </div>
+
+        <div class="product-card">
+          <h3>🍰 Chocolate Cake</h3>
+          <p>Price: ₹199</p>
+          <button>Add to Order</button>
+        </div>
+
+      </div>
+
+      <app-blue></app-blue>
+
+      <div class="container">
+
+        <h1>Angular Routing Demo</h1>
+
+        <nav class="navbar">
+          <a routerLink="/red" routerLinkActive="active">Red </a>
+          <a routerLink="/yellow" routerLinkActive="active">Yellow </a>
+          <a routerLink="/blue" routerLinkActive="active">Blue </a>
+          <a routerLink="/green" routerLinkActive="active">Green </a>
+          <a routerLink="/orange" routerLinkActive="active">Orange</a>
+        </nav>
+
+        <div class="content">
+          <router-outlet></router-outlet>
+        </div>
+
+        <h1>Cafe Bookings</h1>
+        <nav>
+          <a routerLink="/catalog" routerLinkActive="active">Menu List</a>
+          <a routerLink="/add-book" routerLinkActive="active">Add Item</a>
+        </nav>
+
+        <app-catalog></app-catalog>
+        <app-add-book></app-add-book>
+
+      </div>
+
+    </main>
+
+    <!-- RIGHT SIDE - Order Summary -->
+    <aside class="right">
+      <h3>🧾 Order Summary</h3>
+      <p>No items ordered yet.</p>
+      <hr>
+      <h4>Total: ₹0</h4>
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Chinmayi's Cafe</p>
+  </footer>
+
+</div>
